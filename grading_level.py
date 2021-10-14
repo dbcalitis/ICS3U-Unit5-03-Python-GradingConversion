@@ -6,6 +6,8 @@
 
 
 def convert_to_percentage(grade_level):
+    # This function converts Ontario's Grading to percentage
+    # process & output
     if grade_level == "4+":
         percentage = 97.0
     elif grade_level == "4":
@@ -33,7 +35,8 @@ def convert_to_percentage(grade_level):
     elif grade_level == "R":
         percentage = 24.5
     else:
-        percentage = -1
+        percentage = -1.0
+
     return percentage
 
 
