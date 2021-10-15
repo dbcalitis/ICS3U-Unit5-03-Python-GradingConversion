@@ -46,11 +46,13 @@ def main():
     user_input = input("Enter a grade level (Ontario rubric): ")
 
     # call function
-    print(
-        "The percentage of {0} is {1}%.".format(
-            user_input, convert_to_percentage(user_input)
-        )
-    )
+    grade = convert_to_percentage(user_input)
+    
+    if grade != -1:
+        print("The percentage of {0} is {1}%.".format(user_input, grade))
+    else:
+        print("{0} is an invalid input.".format(user_input))
+
 
     print("\nDone.")
 
